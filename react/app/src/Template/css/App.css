@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.alrticon{
+    padding-right: 140px;
+    padding-top:20px;
+}
+
+table {
+    width: 100%; /* Utilise toute la largeur disponible */
+    max-width: 1200px;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px; /* Arrondit les coins de la table */
+    overflow: hidden;
+}
+
+thead tr {
+    background-color: #2c2c2c;
+    color: white;
+    text-align: center;
+    width: 250px;
+}
+
+thead th, tbody td {
+    padding: 12px 15px;
+    border: 1px solid #ecebeb;
+    width: 250px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+tbody tr:hover {
+    background-color: #e0dada;
+}
+
+th, td {
+    text-align: center;
+}
+
+.caption {
+    margin-top: 0px;
+    justify-content: center;
+    padding: 60px;
+    align-self: center;
+    text-align: center;
+    font-size: 40px ;
+    color:rgba(75, 75, 75, 1);
+    display: center;
+}
+
+.error {
+    color: red;
+    font-size: 18px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.chartH,.chartT{
+    margin-top: 0px;
+    justify-content: center;
+    padding: 60px;
+    align-self: center;
+    text-align: center;
+    font-size: 40px ;
+    color:rgba(75, 75, 75, 1);
+    display: center;
+
+}
+.grp-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    padding-left:60px;
+    gap: 90px;
+    transform: translateY(100px);
+}
+.card1,.card2 {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 16px 40px rgba(154, 170, 207, 0.2);
+    align-self: center;
+    display: flex;
+    margin-top: 20px;
+    width: 240px;
+    text-align: center;
+    height: 160px;
+    max-width: 100%;
+    flex-direction: column;
+    font-weight: 400;
+    padding: 65px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.da{
+    margin-top: 30px;
+}
+
+/* Scale-up on Hover */
+.card1:hover, .card2:hover {
+    transform: scale(1.1); /* Scale the card on hover */
+    box-shadow: 0px 20px 50px rgba(154, 170, 207, 0.4); /* Enhance shadow on hover */
+}
+/* Add hover effect on the image if needed */
+.card1:hover img, .card2:hover img {
+    transform: scale(1.05); /* Slightly scale up the image as well */
+}
+.dash h1{
+    margin:0px;
+    padding:60px;
+}
+.dash{
+    align-self: center;
+    text-align: center;
+    font: 20px 'Lato', Helvetica, sans-serif;
+    color:rgba(75, 75, 75, 1);
+}
+/* layout*/
+
+.layo{
+    margin-left: 22rem;
+}
+
+/* Side Css */
+
+a {
+  text-decoration: none !important;
+}
+.side{
+    background-color: #F1F2F7;
+    width:max-content;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.names{
+  font-size: 18px;
+  margin-left: 10px;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+}
+
+.link-with-icon{
+  font-family: 'Poppins', sans-serif;
+  margin: 40px;
+  gap:30px;
+}
+.mb-9 {
+  margin-bottom: 4.5rem;
+}
+

@@ -1,0 +1,100 @@
+body{
+    place-items: initial;
+}
+
+.back-button {
+    display: inline-block;
+    margin: 20px 0;
+    margin-left:70px;
+    padding: 10px 15px;
+    padding-right:30px;
+    font-size: 16px;
+    font-weight: bold;
+    color:#060b18 ;
+    background-color: #5cd6ff;
+    border: none;
+    border-radius: 8px; /* Coins arrondis */
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-button:hover {
+    background-color: white;
+     color: #060b18;/* Couleur plus foncée au survol */
+}
+
+.back-button:active {
+    transform: scale(0.98); /* Réduction légère pour un effet de clic */
+}
+
+/* Sidebar */
+.side {
+  background-color: #060b18; /* Couleur de fond de la sidebar */
+  color: white;
+  width: 295px;
+  padding-top: 2rem;
+  position: fixed;
+  height: 100vh;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.8);
+}
+
+/* Liens de navigation */
+.side ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side li {
+  margin-bottom: 1.5rem;
+}
+
+/* Liens actifs et hover */
+.side li a {
+  display: flex;
+  align-items: center;
+  padding: 20px 20px 30px 30px;
+  border-radius: 10px;
+  text-decoration: none;
+  width: 220px;
+  color: white;
+  font-size: 35px;
+  transition: all 0.3s ease;
+}
+
+.side li a:hover {
+  background-color: #fff;
+  color: #060b18;
+}
+
+.side li a span {
+  margin-right: 2rem; /* Espacement entre l'icône et le texte */
+}
+
+/* Active link */
+.side li.bg-blue-100 {
+  background-color: #white;
+}
+
+.side li.text-blue-600 {
+  color: #060b18; /* Couleur du texte de l'élément actif */
+}
+
+/* Texte des liens */
+.names {
+  font-weight: 500;
+}
+
+/* Textes mobiles et desktop */
+@media (max-width: 768px) {
+  .names {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .names {
+    display: block;
+  }
+}
